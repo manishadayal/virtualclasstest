@@ -1,5 +1,5 @@
 <?php
-    $version = 20190911001;
+    $version = 20190911002;
 ?>
 
 <!DOCTYPE html>
@@ -66,7 +66,29 @@ ini_set('display_errors', 1);
 $room = (isset($_GET['room'])) ? $_GET['room'] : '3_27';
 include('en.php');
 include('auth.php');
-
+/*$Uid=22;
+$name='teacher01 teacher01';
+$role='t';
+$room='2_5';
+$sid='qocKPZsBjo';
+$user='7811dd32410d5c4330503f63a968f9fca3f12feef8e423fc02bddfd11f9bcfea';
+$pass='5c974ab9c63ffa309d9f908128d499f82a56211cbc5a98d9a2c5ef95f293faf3';
+$rid='wss://c1845494746.in10.congrea.net';
+//$upload='http://localhost/moodle39/mod/congrea/webapi.php?cmid=5';
+//$methodname='record_file_save';
+//$down='http://localhost/moodle39/mod/congrea/play_recording.php?cmid=5';
+$debug=1;
+$congreacolor='#021317';
+//$webapi='http://localhost/moodle39/mod/congrea/webapi.php?cmid=5';
+$userpicture='noimage';
+$fromcms=1;
+$licensekey='GQYjcxmCAGAeQ84dCEye2o5G9ygAKE8dkXcOmz5ltvdAMKie';
+$audio=0;
+$video=0;
+$recording=0;
+$settings='FFC7E';
+//$wstoken='';
+$language='pt_br';*/
 /** For demo recording purpose ***/
 /*** include('demo-auth.php'); **/
 

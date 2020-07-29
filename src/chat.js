@@ -10,6 +10,7 @@
         this.counter = 0;
         this.idList = [];
         this.commonChat = [];
+        this.token =  wbUser.token;
 
         const box = null;
         $.htab = [];
@@ -58,11 +59,12 @@
 
       /** TODO , that should be handle properly for simple layout * */
       fetchChatUsers() {
-        // // console.log('FetchUser congrea_get_enrolled_users');
+        // // console.log('core_course_get_enrolled_users_by_cmid');
         const data = new FormData();
         data.append('action', 'fetchUser');
+        data.append('token', this.token);
 
-        virtualclass.xhr.vxhr.post(`${window.webapi}&user=${virtualclass.gObj.uid}&methodname=congrea_get_enrolled_users`, data)
+        virtualclass.xhr.vxhr.post(`${window.webapi}&user=${virtualclass.gObj.uid}&methodname=core_course_get_enrolled_users_by_cmid`, data)
           .then((msg) => {
             // TODO only return total number users instead of array objects
             virtualclass.chat.userList = msg.data;
